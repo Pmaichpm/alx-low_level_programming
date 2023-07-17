@@ -1,17 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ *main - print in lowercase
+ *Return: 0 (Success)
  */
+
 int main(void)
 {
+	char x = 'a';
 
-	char x;
-
-	for (x = 'a'; x <= 'z'; x++)
+	while (x <= 'z')
+	{
 		putchar(x);
-		putchar('\n');
+		x++;
+	}
+	putchar('\n');
 
-return (0);
+	return (0);
 }

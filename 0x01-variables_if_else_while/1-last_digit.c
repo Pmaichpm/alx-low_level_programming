@@ -21,4 +21,4 @@ int main(void)
         	printf("Last digit of %i is %i and is greater than 5\n", n, n % 10);
 	
 	return (0);
-}}
+}

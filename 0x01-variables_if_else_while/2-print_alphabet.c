@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
  * main - print alphabet in lowercase using putchar function
  *
  * Return: 0 (Success)
  */
+
 int main(void)
 {
 

@@ -1,18 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - print alphabet in lowercase using putchar function
+ * main - Entry point
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 
-	char c;
+	char x;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
+	for (x = 'a'; x <= 'z'; x++)
+		putchar(x);
 		putchar('\n');
 
 return (0);

@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
 * print_diagonal - draws a diagonal line
 * @i: takes in an integer
 */
+
 void print_diagonal(int i)
 {
 	int a, b;

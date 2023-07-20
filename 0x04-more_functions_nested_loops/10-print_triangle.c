@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-* print_triangle - print traingle
-* @size: size of triangle
-*/
+ * print_triangle - print traingle
+ * @size: size of triangle
+ */
 
 void print_triangle(int size)
 {
-	int height;
-	int width;
-	int draw;
-
 	if (size <= 0)
 		_putchar('\n');
+
+		int height;
+		int width;
+		int draw;
 
 	for (height = 1; height <= size; height++)
 	{

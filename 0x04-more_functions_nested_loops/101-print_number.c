@@ -3,7 +3,6 @@
 /**
 * print_number - print integers only using _putchar
 * @n: the integer to print
-*
 * Return: void
 */
 

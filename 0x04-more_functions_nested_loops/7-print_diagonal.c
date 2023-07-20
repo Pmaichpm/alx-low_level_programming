@@ -1,22 +1,19 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
 * print_diagonal - draws a diagonal line
 * @i: takes in an integer
 */
-
 void print_diagonal(int i)
 {
-	int p, n;
+	int a, b;
 
-	if (p <= 0)
-	{	_putchar('\n');
-	}
-	for (p = 0; p < i; p++)
+	if (i <= 0)
+		_putchar('\n');
+	for (a = 0; a < n; a++)
 	{
-		for (n = 0; n <= p; j++)
+		for (b = 0; b <= a; b++)
 		{
-			if (p == n)
+			if (a == b)
 			{
 				_putchar('\\');
 				_putchar('\n');

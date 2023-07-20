@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * print_diagonal - draws a diagonal line
 * @i: takes in an integer

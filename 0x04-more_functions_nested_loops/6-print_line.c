@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
 * print_line - draws a straight line in the terminal
-* @n: Integer amount of _
+* @i: Integer amount of _
 * Return: void
 */
+
 void print_line(int i)
 {
 	char a;
@@ -11,4 +13,5 @@ void print_line(int i)
 	for (a = 0; a < i; a++)
 		_putchar('_');
 	_putchar('\n');
+
 }

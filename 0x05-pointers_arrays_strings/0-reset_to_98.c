@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - takes pointer to an int as parameter and updates the value
- * @n: puntero
+ * @n: An integer pointer
  * Return: (0)
 */
 

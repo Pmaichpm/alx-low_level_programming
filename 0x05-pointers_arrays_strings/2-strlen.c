@@ -6,7 +6,7 @@
 *Return: (0)
 */
 
-void int _strlen(char *str)
+int _strlen(char *str)
 {
 	int l = 0;
 

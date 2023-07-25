@@ -4,14 +4,14 @@
 /**
  * print_rev - prints a string in reverse
  * @s: value of the string to print
- * Return: (0)
+ * Return: void
  */
 
 void print_rev(char *s)
 {
-	int l;
+	int l = 0;
 
-	for (l = 0; s[l] != '\0')
+	while (s[l] != '\0')
 	{
 	l++;
 	}

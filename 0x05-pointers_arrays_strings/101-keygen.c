@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * main - generates a random password
+ * main - generates a random valid password
  *
- * Return: generated password
+ * Return: void
  */
 
 int main(void)
@@ -21,5 +21,6 @@ int main(void)
 	putchar(a);
 	}
 	putchar(2772 - i);
+
 	return (0);
 }

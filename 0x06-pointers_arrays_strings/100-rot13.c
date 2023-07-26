@@ -2,28 +2,28 @@
 
 /**
  * rot13 - encodes a string using rot13
- * @s: inputs value
+ * @n: inputs value
  *
  * Return: void
  */
-char *rot13(char *s)
+char *rot13(char *n)
 {
-	{
-	int i = 0;
+	int x, y;
 
-	while (s[i] != '\0')
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char arot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (x = 0; n[x] != '\0'; x++)
 	{
-		while ((s[i] >= 'a' && s[i] <= 'z') ||
-				(s[i] >= 'A' && s[i] <= 'Z'))
+		for (y = 0; a[y] != '\0'; y++)
 		{
-			if ((s[i] >= 'a' && s[i] <= 'm') ||
-					(s[i] >= 'A' && s[i] <= 'M'))
-				s[i] += 13;
-			else
-				s[i] -= 13;
-			i++;
+			if (n[x] == a[y])
+			{
+				n[x] = arot[y];
+				break;
+			}
 		}
-		i++;
 	}
-	return (s);
+
+	return (n);
 }

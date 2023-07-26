@@ -10,14 +10,16 @@ char *rot13(char *n)
 {
 	int i = 0;
 
-	while (n[i] != '\0')
+	for (n[i] != '\0')
 	{
-		while ((n[i] >= 'a' && n[i] <= 'z') ||
+		for ((n[i] >= 'a' && n[i] <= 'z') ||
 				(n[i] >= 'A' && n[i] <= 'Z'))
 		{
 			if ((n[i] >= 'a' && n[i] <= 'm') ||
 					(n[i] >= 'A' && n[i] <= 'M'))
+			{
 				n[i] += 13;
+			}
 			else
 				n[i] -= 13;
 			i++;

@@ -5,7 +5,7 @@
  * @s: insert value
  * @c: insert value
  *
- * Return: returns pointer to the first occurrence of s,c or null
+ * Return: void
  */
 
 char *_strchr(char *s, char c)
@@ -17,5 +17,5 @@ char *_strchr(char *s, char c)
 		if (s[n] == c)
 		return (&s[n]);
 	}
-	return (null);
+	return (0);
 }

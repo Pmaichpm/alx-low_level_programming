@@ -4,6 +4,8 @@
  * print_diagsums - prints diagonals sum
  * @a: insert value
  * @size: insert value
+ *
+ * Return: void
  */
 
 void print_diagsums(int *a, int size)

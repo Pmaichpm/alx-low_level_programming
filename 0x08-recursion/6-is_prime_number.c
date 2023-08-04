@@ -1,11 +1,8 @@
 #include "main.h"
-
 int defined_prime_number(int x, int y);
-
 /**
  * is_prime_number - initial function
  * @n: insert value
- *
  *Return: void
  */
 int is_prime_number(int n)
@@ -15,10 +12,9 @@ int is_prime_number(int n)
 	return (defined_prime_number(n, n - 1));
 }
 /**
- * defined_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
+ * defined_prime_number - returns if input integer is prime number
  * @x: insert value
  * @y: insert value
- *
  * Return: value
  */
 int defined_prime_number(int x, int y)

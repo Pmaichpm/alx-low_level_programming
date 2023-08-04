@@ -12,7 +12,7 @@ int is_palindrome(char *s)
 {
 	if (*s == 0)
 		return (1);
-	return (check_palindrome(s, 0, get_strlen_recuxn(s)));
+	return (check_palindrome(s, 0, get_strlen_recuxn(s) - 1);
 }
 /**
  * get_strlen_recuxn - returns string length

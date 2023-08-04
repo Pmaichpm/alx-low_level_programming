@@ -6,7 +6,7 @@ int get_strlen_recuxn(char *s);
 /**
  * is_palindrome - initial function
  * @s: insert value
- * Return: void
+ * Return: 1 true, 0 false
  */
 
 int is_palindrome(char *s)
@@ -31,7 +31,7 @@ int get_strlen_recuxn(char *s)
  * @x: insert value
  * @y: insert value
  * @z: inser value
- * Return: void
+ * Return: 1 true, 0 false
  */
 int check_palindrome(char *x, int y, int z)
 {

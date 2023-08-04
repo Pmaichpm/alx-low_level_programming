@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 int check_palindrome(char *x, int y, int z);
 int get_strlen_recuxn(char *s);
@@ -9,7 +8,6 @@ int get_strlen_recuxn(char *s);
  * @s: insert value
  * Return: 1 true, 0 false
  */
-
 int is_palindrome(char *s)
 {
 	if (*s == 0)
@@ -36,9 +34,9 @@ int get_strlen_recuxn(char *s)
  */
 int check_palindrome(char *x, int y, int z)
 {
-        if (*(x + y) != *(x + z - 1))
-                return (0);
-        if (y >= z)
-                return (1);
-        return (check_palindrome(z, y + 1, z - 1));
+	if (*(x + y) != *(x + z - 1))
+	return (0);
+	if (y >= z)
+	return (1);
+	return (check_palindrome(z, y + 1, z - 1));
 }

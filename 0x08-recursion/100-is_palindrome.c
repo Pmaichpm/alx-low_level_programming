@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 int check_palindrome(char *x, int y, int z);
 int get_strlen_recuxn(char *s);

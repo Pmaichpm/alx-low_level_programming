@@ -1,5 +1,7 @@
 #include "main.h"
 
+int defined_sqrt_recursion(int x, int i);
+
 /**
  * _sqrt_recursion - initial function
  * @n: inserts value

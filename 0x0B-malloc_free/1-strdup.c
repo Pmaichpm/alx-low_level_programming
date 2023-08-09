@@ -13,19 +13,22 @@ char *_strdup(char *str)
 	char *strcp;
 	unsigned int x, z = 0;
 
+	x = 0;
+	z = 0;
+
 	if (str == NULL)
 		return (NULL);
 
-	for (x = 0; str[x] != '\0'; x++)
-		;
+	while (str[z])
+		z++;
 
-	strcp = (char *)malloc(sizeof(char) * (x + 1));
+	strcp = malloc(sizeof(char) * (z + 1));
 
 	if (strcp == NULL)
 		return (NULL);
 
-	for (z = 0; z <= x; z++)
-		strcp[z] = str[z];
+	while ((strcp[x] = str[x]) != '\0')
+		x++;
 
 	return (strcp);
 }

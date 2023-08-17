@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -6,7 +7,7 @@
  * @argc: insert value
  * @argv: insert value
  *
- * Return: void
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
@@ -24,7 +25,7 @@ arg0 = atoi(argv[1]);
 x = argv[2];
 arg1 = atoi(argv[3]);
 
-if (get_op_func(op) == NULL || x[1] != '\0')
+if (get_op_func(x) == NULL || x[1] != '\0')
 {
 printf("Error\n");
 exit(99);
@@ -35,7 +36,7 @@ if ((*x == '/' && agr1 == 0) || (*x == '%' && agr1 == 0))
 printf("Error\n");
 exit(100);
 }
-printf("%d\n", get_op_func(op)(agr0, agr1));
+printf("%d\n", get_op_func(x)(agr0, agr1));
 return (0);
 }
 

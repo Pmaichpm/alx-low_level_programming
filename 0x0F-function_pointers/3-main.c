@@ -38,3 +38,4 @@ exit(100);
 printf("%d\n", get_op_func(op)(agr0, agr1));
 return (0);
 }
+

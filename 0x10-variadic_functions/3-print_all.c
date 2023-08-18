@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
 #include <stdio.h>
+#include <stdarg.h>
 
 void print_int(char *s, va_list ls);
 void print_char(char *s, va_list ls);
@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 	va_list ls;
 	char *s;
 	int x, z;
-	fm_t fm[] = {
+	printer_t funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_flt},
@@ -90,9 +90,9 @@ void print_all(const char * const format, ...)
 		z = 0;
 		while (z < 4)
 		{
-			if (format[x] == *(fm[z]).fm)
+			if (format[x] == *(funcs[z]).symbol)
 			{
-				fm[z].p(ls, s);
+				funcs[z].print(ls, s);
 				s = ", ";
 			}
 			z++;

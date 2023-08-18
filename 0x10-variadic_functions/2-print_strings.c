@@ -6,6 +6,7 @@
  * print_strings - prints strings, followed by a new line
  * @separator: insert value
  * @n: insert value
+ * @...: insert value
  *
  * Return: void
  */

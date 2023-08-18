@@ -2,6 +2,12 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+void print_int(char *s, va_list ls);
+void print_char(char *s, va_list ls);
+void print_str(char *s, va_list ls);
+void print_flt(va_list ls, char *s)
+void print_all(const char * const format, ...);
+
 /**
  * print_int - prints integer
  * @ls: insert value

@@ -10,7 +10,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t digit = 0;
-	int lng;
+	long int lng;
 
 	while (head)
 	{

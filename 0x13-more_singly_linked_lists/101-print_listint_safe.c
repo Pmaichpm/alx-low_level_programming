@@ -21,7 +21,7 @@ size_t print_listint_safe(const listint_t *head)
 	
 		if (lng > 0)
 		head = head->next;
-		lng++;
+		head++;
 		
 		else
 		{

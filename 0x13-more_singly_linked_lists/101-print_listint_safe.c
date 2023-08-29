@@ -16,19 +16,18 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		lng = head - head->next;
 		digit++;
-	
+
 		printf("[%p] %d\n", (void *)head, head->n);
-	
+
 		if (lng > 0)
 		head = head->next;
-		
+
 		else
 		{
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-			return digit;
-		}
-		else if	(!head)
-			break;
+			return (digit);
+			else if (!head)
+				break;
 
 	}
 

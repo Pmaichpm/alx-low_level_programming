@@ -16,5 +16,5 @@ int get_endianness(void)
 
 	else
 
-	return ((int)check[0]
+	return ((int)check[0]);
 }

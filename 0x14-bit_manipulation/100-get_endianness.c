@@ -12,3 +12,4 @@ int get_endianness(void)
 	char *check = (char *)&n;
 
 	return (*check);
+}

@@ -4,6 +4,7 @@
  * print_binary - print binary representation of a number
  * @n: insert number
  */
+
 void print_binary(unsigned long int n)
 {
 	int i;

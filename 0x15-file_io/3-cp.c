@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void init_buffer(char *filename)
+void clz_file(int filed)
+
 /**
  * init_buffer - initiates a buffer
  * @filename: File name

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void init_buffer(char *filename)
+char init_buffer(char *filename)
 void clz_file(int filed)
 
 /**
@@ -10,7 +10,7 @@ void clz_file(int filed)
  * @filename: File name
  */
 
-void init_buffer(char *filename)
+char init_buffer(char *filename)
 {
 	char *buff;
 

@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char *create_buffer(char *filename);
+void close_file(int fd);
 
 /**
  * create_buffer - initiates a buffer
@@ -25,11 +27,11 @@ char *create_buffer(char *filename)
 }
 
 /**
- * clz_file - close files
+ * close_file - close files
  * @fd: files closed
  */
 
-void clz_file(int fd)
+void close_file(int fd)
 {
 	int f;
 

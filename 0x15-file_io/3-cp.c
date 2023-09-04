@@ -50,7 +50,7 @@ void clz_file(int filed)
 
 int main(int argc, char *argv[])
 {
-	int prev, nxt, rd, wrt;
+	int from, to, rd, wrt;
 	char *buff;
 
 	if (argc != 3)
@@ -60,12 +60,12 @@ int main(int argc, char *argv[])
 	}
 
 	buff = init_buffer(argv[2]);
-	prev = open(argv[1], O_RDONLY);
-	rd = read(prev, buff, 1024);
-	nxt = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	from = open(argv[1], O_RDONLY);
+	rd = read(from, buff, 1024);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (prev == -1 || rd == -1)
+		if (from == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
@@ -73,21 +73,21 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		wrt = write(nxt, buff, rd);
-		if (nxt == -1 || wrt == -1)
+		wrt = write(to, buff, rd);
+		if (to == -1 || wrt == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
 			free(buff);
 			exit(99);
 		}
-		rd = read(prev, buff, 1024);
-		nxt = open(argv[2], O_WRONLY | O_APPEND);
+		rd = read(from, buff, 1024);
+		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (rd > 0);
 
 	free(buff);
-	close_file(prev);
-	close_file(nxt);
+	close_file(from);
+	close_file(to);
 	return (0);
 }

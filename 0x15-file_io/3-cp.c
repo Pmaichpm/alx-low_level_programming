@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *init_buffer(char *filename)
-void clz_file(int fd)
 
 /**
  * init_buffer - initiates a buffer
  * @filename: File name
+ *
+ * Return: pointer to buffer
  */
 
 char *init_buffer(char *filename)

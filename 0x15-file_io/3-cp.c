@@ -37,7 +37,7 @@ void clz_file(int filed)
 
 	if (f == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close filed %d\n", filed);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filed);
 		exit(100);
 	}
 }

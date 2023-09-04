@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 char *init_buffer(char *filename)
-void clz_file(int filed)
+void clz_file(int fd)
 
 /**
  * init_buffer - initiates a buffer
@@ -26,18 +26,18 @@ char *init_buffer(char *filename)
 
 /**
  * clz_file - close files
- * @filed: files closed
+ * @fd: files closed
  */
 
-void clz_file(int filed)
+void clz_file(int fd)
 {
 	int f;
 
-	f = close(filed);
+	f = close(fd);
 
 	if (f == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filed);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }

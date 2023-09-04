@@ -30,9 +30,9 @@ void clz_file(int filed)
 {
 	int f;
 
-	clz = close(filed);
+	f = close(filed);
 
-	if (clz == -1)
+	if (f == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close filed %d\n", filed);
 		exit(100);

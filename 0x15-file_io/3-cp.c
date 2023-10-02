@@ -10,8 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	int acc, wr, rd, m, n;
-	char bsz[BUFFER];
+	int acc, wr, rd, x, y;
+	char bsz[BUFFSZ];
 
 	if (argc != 3)
 	{
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	wr = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((rd = read(acc, bsz, BUFFER)) > 0)
+	while ((rd = read(acc, bsz, BUFFSZ)) > 0)
 	{
 		if (wr < 0 || write(wr, bsz, rd) != rd)
 		{

@@ -1,4 +1,4 @@
-tests/
+tests
 main.c
 betty-style.pl
 betty-doc.pl
